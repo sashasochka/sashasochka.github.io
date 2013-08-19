@@ -3,5 +3,5 @@ safe: true
 lsi: false
 auto: true
 pygments: true
-markdown: rdiscount
+markdown: kramdown
 
