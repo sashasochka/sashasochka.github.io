@@ -36,8 +36,6 @@ node.js
 Scala
 markdown
 html5 & CSS3
-
-
 ~~~
 
 
