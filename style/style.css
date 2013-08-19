@@ -4,3 +4,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+li p {
+  display: inline;
+}
+
