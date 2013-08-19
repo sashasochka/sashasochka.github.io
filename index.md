@@ -2,18 +2,44 @@
 layout: default
 title: Main page
 ---
-### Welcome to my homepage.
+### Welcome to my homepage
 Hi there, my name is Sochka Oleksandr and I am a second year Software Engineering student at the Kyiv Polytechnical Institute in Kyiv, Ukraine.
 
-### ID: sasha.sochka;
+### Info
 
-Specie: geek;
+~~~
+>>> id
+sasha.sochka
 
-Hobbies: Linux, competetive programming, StackOverflow contributing;
+>>> specie
+geek
 
-Coursera: Algorithms, Automata, Machine Learning, Functional Programming Principles in Scala;
+>>> hobbies
+competetive programming (CodeForces, TopCoder)
+StackOverflow contributing
+history
+swimming
 
-Favourite technologies: Linux, KDE, git, C++11, Qt, node.js, Scala, markdown, html5 + css3;
+>>> coursera-courses |
+... filter "interesting" --and "Related to programming"
+Algorithms
+Automata
+Machine Learning
+Functional Programming Principles in Scala
+
+>>> favourite-technologies
+Linux
+KDE
+git
+C++11 & Qt
+node.js
+Scala
+markdown
+html5 & CSS3
+
+
+~~~
+
 
 Сurriculum vitae: [pdf](/cv.pdf);
 
