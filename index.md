@@ -3,7 +3,9 @@ layout: default
 title: Main page
 ---
 ### Welcome to my homepage
-Hi there, my name is Sochka Oleksandr and I am a second year Software Engineering student at the Kyiv Polytechnical Institute in Kyiv, Ukraine.
+Hi there, my name is Sochka Oleksandr and
+I am a second year Software Engineering student at the
+Kyiv Polytechnic Institute in Kyiv, Ukraine.
 
 ### Info
 
@@ -39,7 +41,7 @@ html5 & CSS3
 ~~~
 
 
-Сurriculum vitae: [pdf](/cv.pdf);
+Сurriculum vitae: [pdf](/cv.pdf)
 
 ### Support or Contact:
 
