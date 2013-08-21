@@ -62,7 +62,7 @@ You can also find me on [CodeForces][codeforces], [TopCoder][topcoder],  [Linked
 [codeforces]: http://codeforces.com/profile/sasha.sochka
 [topcoder]: https://community.topcoder.com/tc?module=MemberProfile&cr=23058966
 [linkedin]: https://www.linkedin.com/in/oleksandrsochka
-[stackoverflow]: https://stackoverflow.com/users/2149111/sasha-sochka
+[stackoverflow]: http://stackoverflow.com/users/2149111/sasha-sochka
 [twitter]: https://twitter.com/sashasochka
 [facebook]: https://www.facebook.com/olexandr.sochka
 
