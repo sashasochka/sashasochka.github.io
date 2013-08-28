@@ -53,7 +53,7 @@ GitHub: [sochka][github]
 
 StackOverflow: [sasha.sochka][stackoverflow]
 
-You can also find me on [CodeForces][codeforces], [TopCoder][topcoder],  [LinkedIn][linkedin], [Twitter][twitter], and [Facebook][facebook]
+You can also find me on [CodeForces][codeforces], [TopCoder][topcoder],  [LinkedIn][linkedin], [Twitter][twitter] and [Facebook][facebook]
 
 <div style="text-align:right">Made by Oleksandr Sochka &copy; 2013</div>
 
