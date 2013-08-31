@@ -41,7 +41,7 @@ html5 & CSS3
 ~~~
 
 
-Сurriculum vitae: [pdf](/cv.pdf)
+Resume: [pdf](/resume.pdf)
 
 ### Support or Contact:
 
