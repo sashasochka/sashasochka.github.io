@@ -30,10 +30,11 @@ Machine Learning
 Functional Programming Principles in Scala
 
 >>> favourite-technologies
-Linux
-KDE
+<!--Linux
+KDE-->
 git
-C++11 & Qt
+C++11
+Qt
 node.js
 Scala
 markdown
