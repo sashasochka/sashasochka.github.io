@@ -64,7 +64,7 @@ The interviewer can immediately see how you type your code and give some feedbac
 The first interview was a complete fail...
 There were a few pretty basic problems, well, I couldn't even imagine that Google could ask *that* simple questions.
 (I'm not allowed to publish them).
-So I was like, well, it's so simple, and I started rushing and wrote a piece of <s>sheat</s> code.
+So I was like, well, it's so simple, and I started rushing and wrote a piece of <s>shit</s> code.
 During the next 3 minutes I removed and rewrote that code 3 times. A similar thing happened with the next task.
 After the interview I started analyzing and found about 10 bugs, mistakes or bad design decision in my programs.
 I felt like a bad (\_|\_)
