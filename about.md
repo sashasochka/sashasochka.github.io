@@ -7,7 +7,7 @@ title: About
 ![Here I am at the 2013 Rose Bowl.](/assets/stanford_rosebowl_photo_2013-e1361222975696-940x689.jpg)
 -->
 
-I am a second year Software Engineering student at the
+I am a third year Software Engineering student at the
 National Technical University of Ukraine "Kyiv Polytechnic Institute" (or KPI, in short) located in Kyiv, Ukraine.
 
 I have been fascinated by technology and especially programming since early high-school.
