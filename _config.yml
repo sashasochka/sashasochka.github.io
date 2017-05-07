@@ -9,14 +9,14 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Oleksandr Sochka
+title:            Oleksandr "Sasha" Sochka
 tagline:          'Programming and stuff'
 url:              http://www.sochka.github.io
 shorturl:         socka.github.io
 
 author:
-  name:           'Oleksandr Sochka'
-  url:            https://twitter.com/oleksandrsochka
+  name:           'Oleksandr "Sasha" Sochka'
+  url:            https://facebook.com/oleksandr.sochka
 
 paginate:         1
 
