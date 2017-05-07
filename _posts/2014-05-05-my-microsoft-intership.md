@@ -5,25 +5,26 @@ comments: true
 permalink: my-microsoft-internship
 ---
 
-  My first post after today's website rewriting will be about my summer Microsoft internship.
+  (This website is somewhat abandoned - this is the only post here).
 
-  The full story started much earlier. When I was in high-school and was doing some basic programming
+  This is a write-up about my Microsoft internship (written before it actually happened).
+
+  The whole story started much earlier. When I was in high-school and was doing some basic programming
 I found out about sport (aka competitive) programming.
 I was quite successful at olympiads and took 3d and 2nd places in Kyiv city in subsequent years.
 In 2012, during my last year of school I participated in Google Code Jam online competition,
 and, surprisingly, after 3 rounds I was in top 1000 (from about 20,000 people initially) which was fascinating for me.
 The next year I wasn't able to get even to that stage.
 
-  My acquaintance with top companies started when about 3-4 month later HR from Google send me an email where I
+  My acquaintance with top companies started when about 3-4 month later when recruiter from Google sent me an email where I
 was proposed to think about potentially having a job at Google (or something like that).
-Of course, that in no way meant an offer from the company.
 Reminding you, that, at that time, I was still in high-school and was just 16 years old,
-my answer to the email was so non-impressive that I was ignored and didn't receive any emails later on from him.
+my answer to the email was so not-so-impressive so I was ignored and didn't receive any emails later on from him.
 
   But after that email I seriously started to think about a job or internship in a top company like Google, Microsoft, Facebook etc.
 A year later I visited an office of one of the top companies in the USA, I saw how awesome it was and strove to result even more.
 
-  So, in April - May 2013 I found Microsoft website where you can apply as a potential intern and I applied.
+  So, in April - May 2013 I found Microsoft website where you can apply as a potential intern, so I did.
 It was too late for summer 2013, so about 3 months later I've got an email from local Microsoft HR with suggestion to reapply for the next summer.
 
   And then I had the first trouble... When filling the new form I wasn't able to fill-in a required job-experience field.
@@ -37,7 +38,7 @@ professional job experience, so it's mostly your current skills and ability to s
 
 In the same time I applied for internship at Google, remembering the interest from the company some time ago.
 
-After I send applications, there was about a month until the interviews.
+After I sent applications, there was about a month until the interviews.
 I tried to read as much articles from other people about this topic as possible.
 As I expected, they suggested to focus mostly on algorithms, data structures, complexity analysis
 as companies like MS are mostly testing your ability
@@ -46,7 +47,7 @@ to think. Not just how much information is in your head but how you think and re
 As far as I remember I read the following (very useful) books:
 
 * Programming Interviews Exposed
-* CrackCode
+* Cracking the Coding Interview - this one is probably the best.
 * The Google resume
 
 They are especially targeted for people who applying for jobs in the top IT companies and were written by
@@ -72,7 +73,7 @@ I felt like a bad (\_|\_)
 I made the conclusions and the second interview went much better, I was much more confident,
 almost didn't rush and in general had a feeling that,
 if my first interview was not that bad, I would almost 100% come to the next stage.
-I guess, in summary, my chances were probably 30%/70%. My HR wrote me that I'd have an answer in about 6-8 weeks.
+I guess, in summary, my chances were probably 30%/70%. My recruiter wrote me that I'd have an answer in about 6-8 weeks.
 
 And then, Microsoft finally scheduled it's first interview for me. Although the tasks were quite similar but the process itself was a bit different.
 First of all, it wasn't a phone interview. I was lucky - Microsoft guys flew to Kyiv - it was chosen as a central interviewing place in the East Europe!
@@ -95,7 +96,7 @@ But instead of asking questions and asking to solve problems he was mostly
 telling me about how cool Microsoft is, we had a discussion why would a
 developer work in one or another company. That increased my confidence even more - why would we talk about that if I was going to be dismissed?
 
-An interesting fact was, that, in between the subinterviews one of HRs was constantly telling us not to worry about rains in Seattle.
+An interesting fact was, that, in between the subinterviews one of recruiters was constantly telling us not to worry about rains in Seattle.
 During those moments I was always thinking like, are there really people in this world, who wouldn't go for MS internship only because of rains!?
 In general the atmosphere was very friendly, the company tries to thing about all possible details for you.
 
@@ -117,4 +118,3 @@ In summary, for your interview with Microsoft (primarily) or Google you'll (subj
 - Understanding and ability to speak English is required just to be able to speak with the interviewer.
 But the higher your English level is - the more time will be available for thinking about the problems and not about the language.
 
-I'll probably keep blogging about my adventures in Seattle during and after the internship itself.
