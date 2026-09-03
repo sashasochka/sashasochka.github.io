@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "info.nightscout.androidaps",
+      "sha256_cert_fingerprints": [
+        "F2:2F:B7:9B:68:CA:EB:AD:FF:0F:62:93:0A:AA:89:C3:F2:F5:C9:67:3B:79:43:B4:F1:AC:83:22:AB:BD:30:75"
+      ]
+    }
+  }
+]

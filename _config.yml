@@ -4,6 +4,10 @@ redcarpet:
 
 pygments:         true
 
+# Jekyll skips dot-directories by default. Without this include, /.well-known/assetlinks.json
+# is never published and Android App Link verification for AndroidAPS silently fails.
+include: ['.well-known']
+
 # Permalinks
 permalink:        pretty
 
