@@ -64,11 +64,16 @@
   }
 
   var encoded = fragment.slice(prefix.length);
+  if (!encoded || encoded.length > 16384 || !/^[A-Za-z0-9_-]+$/.test(encoded)) {
+    fail('The nutrition payload has invalid encoding or is too large.');
+    return;
+  }
   var json;
   try {
     var b64 = encoded.replace(/-/g, '+').replace(/_/g, '/');
     while (b64.length % 4) b64 += '=';
     var binary = atob(b64);
+    if (binary.length > 12288) throw new Error('Payload too large');
     var bytes = new Uint8Array(binary.length);
     for (var i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
     json = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes));
@@ -77,7 +82,15 @@
     return;
   }
 
-  if (!json || json.protocol !== 'aaps-nutrition' || json.version !== 1) {
+  if (Array.isArray(json) && json.length > 0 && json.length <= 32) {
+    var foods = json;
+    if (foods.some(function (f) { return !f || typeof f !== 'object' || Array.isArray(f); })) {
+      fail('Invalid food item.'); return;
+    }
+    json = { protocol: 'aaps-nutrition', version: '1.2', items: foods,
+      description: foods.map(function (f) { return f.description; }).join(', ') };
+  }
+  if (!json || json.protocol !== 'aaps-nutrition' || !/^1(?:\.\d+)?$/.test(String(json.version))) {
     fail('Unsupported nutrition payload.');
     return;
   }
@@ -88,6 +101,14 @@
   out.appendChild(heading);
 
   var table = document.createElement('table');
+  var items = Array.isArray(json.items) ? json.items : Array.isArray(json.foods) ? json.foods : [];
+  if (items.length > 32) { fail('Too many food items.'); return; }
+  if (items.some(function (item) { return !item || typeof item !== 'object' || Array.isArray(item); })) {
+    fail('Invalid food item.'); return;
+  }
+  ['carbs_g', 'protein_g', 'fat_g', 'energy_kcal'].forEach(function (key) {
+    if (json[key] === undefined && items.length) json[key] = items.reduce(function (sum, item) { return sum + (Number(item[key]) || 0); }, 0);
+  });
   row(table, 'Calories (kcal)', json.energy_kcal);
   row(table, 'Carbohydrates (g)', json.carbs_g);
   row(table, 'Protein (g)', json.protein_g);
@@ -98,6 +119,24 @@
   row(table, 'Meal type', json.meal_type);
   row(table, 'Suggested time', json.meal_time);
   out.appendChild(table);
+
+  function showProfile(name, profile) {
+    if (!profile) return;
+    var p = document.createElement('p');
+    p.textContent = name + ': ' + String(profile.speed || 'unspecified') +
+      (profile.half_min === undefined ? '' : ', half around ' + profile.half_min + ' min') +
+      (profile.most_min === undefined ? '' : ', most around ' + profile.most_min + ' min') +
+      (profile.eating_min === undefined ? '' : ', eating ' + profile.eating_min + ' min');
+    out.appendChild(p);
+  }
+  showProfile(json.description || 'Meal', json.response_profile);
+  items.forEach(function (item) { showProfile(item.description || 'Food', item.response_profile); });
+  if (json.response_profile || items.some(function (item) { return item.response_profile; })) {
+    var estimate = document.createElement('p');
+    estimate.className = 'note';
+    estimate.textContent = 'Food timing ranges are estimates, not measured digestion or calibrated confidence. AndroidAPS validates the profile and asks you to confirm the food and eating time before recording it.';
+    out.appendChild(estimate);
+  }
 
   if (typeof json.image_url === 'string' && json.image_url.indexOf('https://') === 0) {
     var p = document.createElement('p');
